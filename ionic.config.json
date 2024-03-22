@@ -1,0 +1,7 @@
+{
+  "name": "RTDB-Insum2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
