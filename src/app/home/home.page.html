@@ -9,50 +9,10 @@
 <ion-content [fullscreen]="true">
   <ion-grid [fixed]="true">
     <ion-row>
-      <ion-col>
+      <ion-col *ngFor="let cuarto of ['banio', 'bodega', 'cocina', 'dormitorio', 'dormitorio2', 'sala']">
         <div class="ventana-estilizada">
           <div class="marco"></div>
-          <div class="vidrio"></div>
-          <div class="detalle-inferior"></div>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="ventana-estilizada">
-          <div class="marco"></div>
-          <div class="vidrio"></div>
-          <div class="detalle-inferior"></div>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="ventana-estilizada">
-          <div class="marco"></div>
-          <div class="vidrio"></div>
-          <div class="detalle-inferior"></div>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid [fixed]="true">
-    <ion-row>
-      <ion-col>
-        <div class="ventana-estilizada">
-          <div class="marco"></div>
-          <div class="vidrio"></div>
-          <div class="detalle-inferior"></div>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="ventana-estilizada">
-          <div class="marco"></div>
-          <div class="vidrio"></div>
-          <div class="detalle-inferior"></div>
-        </div>
-      </ion-col>
-      <ion-col>
-        <div class="ventana-estilizada">
-          <div class="marco"></div>
-          <div class="vidrio"></div>
+          <div class="vidrio" [style.background-color]="vidrioColores[cuarto]"></div>
           <div class="detalle-inferior"></div>
         </div>
       </ion-col>
