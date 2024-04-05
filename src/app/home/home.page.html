@@ -12,7 +12,7 @@
       <ion-col *ngFor="let cuarto of ['banio', 'bodega', 'cocina', 'dormitorio', 'dormitorio2', 'sala']">
         <div class="ventana-estilizada">
           <div class="marco"></div>
-          <div class="vidrio" [style.background-color]="vidrioColores[cuarto]"></div>
+          <div class="vidrio" [style.background-color]="valores_db[cuarto]? '#FCCD23':'#77E9FC'"></div>
           <div class="detalle-inferior"></div>
         </div>
       </ion-col>
